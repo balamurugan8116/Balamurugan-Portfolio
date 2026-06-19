@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BALAMURUGAN R – Java Full Stack Developer based in Chennai. Building modern web applications with Java, React.js, and more." />
+  <meta name="keywords" content="Java Full Stack Developer, React, Portfolio, Chennai, Balamurugan" />
+  <meta name="author" content="BALAMURUGAN R" />
+  <title>BALAMURUGAN R | Java Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>BR<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="Balamurugan-R (Resume).pdf" download class="btn btn-sm btn-outline">
+          <i class="fas fa-download"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-name reveal">
+        <span class="name-line">BALAMURUGAN</span>
+        <span class="name-line accent-gradient"> R</span>
+      </h1>
+      <div class="hero-role reveal">
+        <span class="role-static">I build&nbsp;</span>
+        <span class="typing-wrap">
+          <span class="typing-text" id="typingText"></span><span class="cursor-blink">|</span>
+        </span>
+      </div>
+      <p class="hero-tagline reveal">
+        Full Stack Developer crafting scalable web applications<br />
+        from Chennai — where code meets creativity.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fas fa-paper-plane"></i>
+          <span>Let's Talk</span>
+        </a>
+      </div>
+      <div class="hero-social reveal">
+        <a href="https://github.com/balamurugan8116" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bala-murugan8116/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:balamurugan8116@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+918925645955" aria-label="Phone"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="avatar-ring">
+        <div class="avatar-inner"><span class="avatar-initials">BR</span></div>
+        <div class="orbit orbit-1"><div class="orbit-dot"><i class="fab fa-java"></i></div></div>
+        <div class="orbit orbit-2"><div class="orbit-dot"><i class="fab fa-react"></i></div></div>
+        <div class="orbit orbit-3"><div class="orbit-dot"><i class="fas fa-database"></i></div></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card glass reveal"><div class="stat-number" data-target="4">0</div><div class="stat-label">Projects Built</div></div>
+        <div class="stat-card glass reveal"><div class="stat-number" data-target="5">0</div><div class="stat-label">Certifications</div></div>
+        <div class="stat-card glass reveal"><div class="stat-number" data-target="7">0</div><div class="stat-label">Tech Skills</div></div>
+        <div class="stat-card glass reveal"><div class="stat-number" data-target="2">0</div><div class="stat-label">Awards Won</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">Enthusiastic and detail-oriented <strong>Full Stack Developer</strong> with hands-on experience building modern web applications.</p>
+          <p style="text-align: justify;">I hold a B.Tech in Biotechnology from <em>Bannari Amman Institute of Technology</em> — a background that gives me a unique lens on problem-solving, blending scientific rigor with engineering creativity. Passionate about software development, I thrive where complex challenges meet elegant solutions.</p>
+          <p style="text-align: justify;">When I'm not writing code, I'm exploring design systems, experimenting with AI tools, or presenting at national-level conferences.</p>
+          <div class="about-info-grid">
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Chennai, Tamil Nadu</span></div>
+            <div class="info-item"><i class="fas fa-envelope"></i><a href="mailto:balamurugan8116@gmail.com">balamurugan8116@gmail.com</a></div>
+            <div class="info-item"><i class="fas fa-phone"></i><a href="tel:+918925645955">+91 8925645955</a></div>
+            <div class="info-item"><i class="fas fa-graduation-cap"></i><span>B.Tech Biotechnology – CGPA 7.9</span></div>
+          </div>
+          <a href="Balamurugan-R (Resume).pdf" download class="btn btn-primary"><i class="fas fa-file-download"></i> Download Resume</a>
+        </div>
+        <div class="about-card-stack reveal">
+          <div class="card-float glass card-1"><i class="fas fa-code"></i><div><strong>Full Stack</strong><span>Java + React</span></div></div>
+          <div class="card-float glass card-2"><i class="fas fa-flask"></i><div><strong>Background</strong><span>Biotechnology</span></div></div>
+          <div class="card-float glass card-3"><i class="fas fa-trophy"></i><div><strong>Recognition</strong><span>Hackathon Runner-Up</span></div></div>
+          <div class="card-float glass card-4"><i class="fa-solid fa-palette card-icon"></i><div><strong>UI Designer</strong><span>Figma, Illustrator & Photoshop proficiency</span></div></div>
+          <div class="edu-card glass">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div class="edu-details">
+              <strong>Bannari Amman Institute of Technology</strong>
+              <span>B.Tech Biotechnology</span>
+              <span class="cgpa">CGPA: 7.9 / 10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">What I Know</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-bars reveal">
+          <h3 class="skill-category-title">Proficiency</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Java</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85" style="--clr:#61dafb"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>React.js</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80" style="--clr:#61dafb"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>HTML / CSS</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90" style="--clr:#61dafb"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>JavaScript</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78" style="--clr:#61dafb"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>MySQL / MongoDB</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75" style="--clr:#61dafb"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>Tailwind CSS</span><span class="skill-pct">72%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72" style="--clr:#61dafb"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header"><span>AI Tools (Claude 101 & Gen AI)</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80" style="--clr:#61dafb"></div></div>
+          </div>
+        </div>
+        <div class="skill-tags-col reveal">
+          <div class="skill-group">
+            <h3 class="skill-group-label"><i class="fas fa-layer-group"></i> Frontend</h3>
+            <div class="tag-cloud">
+              <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span class="skill-tag">JavaScript</span><span class="skill-tag">React.js</span><span class="skill-tag">Tailwind</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-label"><i class="fas fa-server"></i> Backend</h3>
+            <div class="tag-cloud"><span class="skill-tag">Java</span></div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-label"><i class="fas fa-database"></i> Database</h3>
+            <div class="tag-cloud"><span class="skill-tag">MongoDB</span><span class="skill-tag">MySQL</span></div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-label"><i class="fas fa-tools"></i> AI Tools</h3>
+            <div class="tag-cloud">
+              <span class="skill-tag">Claude</span><span class="skill-tag">Prompt Engineering</span><span class="skill-tag">Gen AI</span>
+            </div>
+          </div>
+            <div class="skill-group">
+            <h3 class="skill-group-label"><i class="fas fa-computer"></i> Tools & Design</h3>
+            <div class="tag-cloud">
+              <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">VS Code</span><span class="skill-tag">Figma</span><span class="skill-tag">Power BI</span><span class="skill-tag">Photoshop</span><span class="skill-tag">Illustrator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="js">JavaScript</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card glass reveal" data-tags="js">
+          <div class="project-featured-badge">Featured</div>
+          <br>
+          <div class="project-top">
+            <div class="project-icon" style="background:linear-gradient(135deg,#6366f1,#06b6d4)"><i class="fas fa-dna"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/biosky-calculator" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://your-demo-link.com" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">BioSky Calculator</h3>
+            <p class="project-desc">A web-based molecular biology calculator for molecular weight, stock preparation, cell seeding, DNA melting temperature, and other biological calculations.</p>
+            <div class="project-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+          <div class="project-hover-glow"></div>
+        </div>
+
+        <div class="project-card glass reveal featured" data-tags="react mobile">
+          <div class="project-featured-badge">Featured</div>
+          <br>
+          <div class="project-top">
+            <div class="project-icon" style="background:linear-gradient(135deg,#06b6d4,#0891b2)"><i class="fas fa-water"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/flowx" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://flutter-community-app-97e72.web.app/login" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Flowx – Smart Water Issue Reporter</h3>
+            <p class="project-desc">A mobile application that crowdsources water-related issues and visualizes them on an interactive map using open-source data.</p>
+            <div class="project-stack"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          </div>
+          <div class="project-hover-glow"></div>
+        </div>
+
+        <div class="project-card glass reveal featured" data-tags="react ai">
+          <div class="project-featured-badge">Featured</div>
+          <br>
+          <div class="project-top">
+            <div class="project-icon" style="background:linear-gradient(135deg,#8b5cf6,#6366f1)"><i class="fas fa-heartbeat"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/balamurugan8116/MedQube1" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://medqube.vercel.app/" target="_blank" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">MedQube – Doctor Appointment System</h3>
+            <p class="project-desc">A healthcare platform using RFID, Face Detection, AI scheduling, React.js, Node.js, Flutter, and Android technologies for smart doctor availability management.</p>
+            <div class="project-stack"><span>React.js</span><span>Node.js</span><span>Flutter</span><span>AI/ML</span></div>
+          </div>
+          <div class="project-hover-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Milestones</span>
+        <h2 class="section-title">Achievements & Certifications</h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card glass reveal"><div class="ach-icon cert"><i class="fab fa-react"></i></div><div class="ach-body"><h4>React JS Certification</h4><p>Certified in modern React development including Hooks, Context API, and state management.</p></div></div>
+        <div class="achievement-card glass reveal"><div class="ach-icon cert"><i class="fab fa-java"></i></div><div class="ach-body"><h4>Java Certification</h4><p>Certified in Core Java, OOP principles, and backend application development.</p></div></div>
+        <div class="achievement-card glass reveal"><div class="ach-icon cert"><i class="fab fa-adobe"></i></div><div class="ach-body"><h4>Adobe Photoshop Certification</h4><p>Proficient in digital design, photo editing, and visual content creation.</p></div></div>
+        <div class="achievement-card glass reveal"><div class="ach-icon cert"><i class="fas fa-robot"></i></div><div class="ach-body"><h4>Gen AI Tools + Claude 101</h4><p>Certified in Generative AI tools and prompt engineering with Claude.</p></div></div>
+        <div class="achievement-card glass reveal highlight"><div class="ach-icon award"><i class="fas fa-trophy"></i></div><div class="ach-body"><h4>TechSpectrum'24 Runner-Up</h4><p>Secured Runner-Up at TechSpectrum'24 national technical event.</p></div></div>
+        <div class="achievement-card glass reveal highlight"><div class="ach-icon award"><i class="fas fa-medal"></i></div><div class="ach-body"><h4>Technical Hackathon Runner-Up</h4><p>Recognized for innovative solution in a competitive technical hackathon.</p></div></div>
+        <div class="achievement-card glass reveal"><div class="ach-icon award"><i class="fas fa-chalkboard-teacher"></i></div><div class="ach-body"><h4>National Conference Presenter</h4><p>Presented research at multiple national-level technical conferences.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">I'm currently open to new opportunities. Feel free to reach out.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-info-item glass">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div class="ci-text"><span>Email</span><a href="mailto:balamurugan8116@gmail.com">balamurugan8116@gmail.com</a></div>
+          </div>
+          <div class="contact-info-item glass">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div class="ci-text"><span>Phone</span><a href="tel:+918925645955">+91 8925645955</a></div>
+          </div>
+          <div class="contact-info-item glass">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="ci-text"><span>Location</span><span>Chennai, Tamil Nadu, India</span></div>
+          </div>
+          <div class="contact-social">
+            <a href="https://github.com/balamurugan8116" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/bala-murugan8116/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:balamurugan8116@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form glass" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+                <span class="form-error" id="nameError">Please enter your name.</span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required />
+                <span class="form-error" id="emailError">Please enter a valid email.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <span class="form-error" id="messageError">Please write a message.</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span id="btnText"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span id="btnLoading" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending…</span>
+            </button>
+            <div class="form-success" id="formSuccess" style="display:none">
+              <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo"><span class="logo-bracket">&lt;</span>BR<span class="logo-bracket">/&gt;</span></div>
+        <p class="footer-copy">© 2025 BALAMURUGAN R. Crafted with <i class="fas fa-heart" style="color:#f43f5e"></i> in Chennai.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
