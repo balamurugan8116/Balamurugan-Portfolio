@@ -1,6 +1,6 @@
 # BALAMURUGAN R – Portfolio Website
 
-**Java Full Stack Developer | Chennai, Tamil Nadu**
+**Full Stack Developer | Chennai, Tamil Nadu**
 
 ## 🚀 Features
 - Dark / Light mode toggle with localStorage persistence
@@ -31,7 +31,7 @@ portfolio/
 
 ## 🛠 Setup
 1. Download/clone the folder
-2. Add your resume PDF at `assets/resume.pdf`
+2. Add your resume PDF at `Balamurugan-R (Resume)`
 3. Open `index.html` in any browser – no build step required
 
 ## 📬 Contact
